@@ -2,7 +2,7 @@
   "name": "mangiwanbot",
   "version": "1.0.0",
   "description": "Bot telegram to create simple order app.",
-  "main": "src/index.js",
+  "main": "functions/tocamosa.js",
   "author": "Iwan Firmawan <firmawaneiwan@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -12,9 +12,9 @@
   },
   "scripts": {
     "postinstall": "netlify-lambda install",
-    "buildNetlify": "netlify-lambda build src",
-    "start": "node src/index.js",
-    "devNetlify": "netlify-lambda serve src"
+    "buildNetlify": "netlify-lambda build functions",
+    "start": "node functions/tocamosa.js",
+    "devNetlify": "netlify-lambda serve functions"
   },
   "devDependencies": {}
 }

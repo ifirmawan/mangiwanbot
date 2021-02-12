@@ -20,7 +20,7 @@ bot.action('delete', (ctx) => ctx.deleteMessage())
 //bot.launch()
 
 bot.on('inline_query', (ctx) => {
-return inlineAction(ctx)
+  return inlineAction(ctx)
 })
 
 exports.handler = async event => {

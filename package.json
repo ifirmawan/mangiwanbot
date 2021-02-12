@@ -1,0 +1,20 @@
+{
+  "name": "mangiwanbot",
+  "version": "1.0.0",
+  "description": "Bot telegram to create simple order app.",
+  "main": "src/index.js",
+  "author": "Iwan Firmawan <firmawaneiwan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "netlify-lambda": "^2.0.3",
+    "telegraf": "^4.0.3"
+  },
+  "scripts": {
+    "postinstall": "netlify-lambda install",
+    "buildNetlify": "netlify-lambda build src",
+    "start": "node src/index.js",
+    "devNetlify": "netlify-lambda serve src"
+  },
+  "devDependencies": {}
+}
